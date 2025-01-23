@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="4.0" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
+    <edmx:Reference Uri="../../catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_COMMON',Version='0001',SAP__Origin='LOCAL')/$value">
+        <edmx:Include Namespace="com.sap.vocabularies.Common.v1" Alias="Common"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="../../catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_UI',Version='0001',SAP__Origin='LOCAL')/$value">
+        <edmx:Include Namespace="com.sap.vocabularies.UI.v1" Alias="UI"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="../../catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_COMMUNICATION',Version='0001',SAP__Origin='LOCAL')/$value">
+        <edmx:Include Namespace="com.sap.vocabularies.Communication.v1" Alias="Communication"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="../../catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_PERSONALDATA',Version='0001',SAP__Origin='LOCAL')/$value">
+        <edmx:Include Namespace="com.sap.vocabularies.PersonalData.v1" Alias="PersonalData"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="../../catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_VALIDATION',Version='0001',SAP__Origin='LOCAL')/$value">
+        <edmx:Include Namespace="Org.OData.Validation.V1" Alias="Validation"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="../../catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_ANALYTICS',Version='0001',SAP__Origin='LOCAL')/$value">
+        <edmx:Include Namespace="com.sap.vocabularies.Analytics.v1" Alias="Analytics"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="../../catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_HTML5',Version='0001',SAP__Origin='LOCAL')/$value">
+        <edmx:Include Namespace="com.sap.vocabularies.HTML5.v1" Alias="HTML5"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="../../../sap/zcds_con_scarr_rg_cds/$metadata">
+        <edmx:Include Namespace="ZCDS_CON_SCARR_RG_CDS" Alias="SAP"/>
+    </edmx:Reference>
+    <edmx:DataServices>
+        <Schema Namespace="zcds_con_scarr_rg_cds_van.v1" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+            <Annotations Target="ZCDS_CON_SCARR_RG_CDS.I_DraftAdministrativeDataType/DraftUUID">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="ZCDS_CON_SCARR_RG_CDS.I_DraftAdministrativeDataType/DraftEntityType">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="ZCDS_CON_SCARR_RG_CDS.I_DraftAdministrativeDataType/DraftAccessType">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="ZCDS_CON_SCARR_RG_CDS.I_DraftAdministrativeDataType/ProcessingStartDateTime">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="ZCDS_CON_SCARR_RG_CDS.I_DraftAdministrativeDataType/InProcessByUser">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="ZCDS_CON_SCARR_RG_CDS.I_DraftAdministrativeDataType/DraftIsKeptByUser">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="ZCDS_CON_SCARR_RG_CDS.I_DraftAdministrativeDataType/EnqueueStartDateTime">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="ZCDS_CON_SCARR_RG_CDS.I_DraftAdministrativeDataType/DraftIsCreatedByMe">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="ZCDS_CON_SCARR_RG_CDS.I_DraftAdministrativeDataType/DraftIsLastChangedByMe">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="ZCDS_CON_SCARR_RG_CDS.I_DraftAdministrativeDataType/DraftIsProcessedByMe">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="ZCDS_CON_SCARR_RG_CDS.I_DraftAdministrativeDataType/CreatedByUserDescription">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="ZCDS_CON_SCARR_RG_CDS.I_DraftAdministrativeDataType/LastChangedByUserDescription">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="ZCDS_CON_SCARR_RG_CDS.I_DraftAdministrativeDataType/InProcessByUserDescription">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="ZCDS_CON_SCARR_RG_CDS.ZCDS_CON_SCARR_RGType/HasDraftEntity">
+                <Annotation Term="UI.HiddenFilter"/>
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="ZCDS_CON_SCARR_RG_CDS.ZCDS_CON_SCARR_RGType/DraftUUID">
+                <Annotation Term="UI.HiddenFilter"/>
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="ZCDS_CON_SCARR_RG_CDS.ZCDS_CON_SCARR_RGType/DraftEntityCreationDateTime">
+                <Annotation Term="UI.HiddenFilter"/>
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="ZCDS_CON_SCARR_RG_CDS.ZCDS_CON_SCARR_RGType/DraftEntityLastChangeDateTime">
+                <Annotation Term="UI.HiddenFilter"/>
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="ZCDS_CON_SCARR_RG_CDS.ZCDS_CON_SCARR_RGType/HasActiveEntity">
+                <Annotation Term="UI.HiddenFilter"/>
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="ZCDS_CON_SCARR_RG_CDS.ZCDS_CON_SCARR_RGType/IsActiveEntity">
+                <Annotation Term="UI.HiddenFilter"/>
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="ZCDS_CON_SCARR_RG_CDS.ZCDS_CON_SCARR_RGType/Activation_ac">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="ZCDS_CON_SCARR_RG_CDS.ZCDS_CON_SCARR_RGType/Edit_ac">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="ZCDS_CON_SCARR_RG_CDS.ZCDS_CON_SCARR_RGType/Preparation_ac">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="ZCDS_CON_SCARR_RG_CDS.ZCDS_CON_SCARR_RGType/Validation_ac">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="ZCDS_CON_SCARR_RG_CDS.ZCDS_CON_SCARR_RGType">
+                <Annotation Term="UI.DataPoint" Qualifier="Carrid">
+                    <Record>
+                        <PropertyValue Property="Value" Path="Carrid"/>
+                        <PropertyValue Property="Title" String="Codigo Compañia"/>
+                        <PropertyValue Property="Description" String="Codigo Compañia"/>
+                    </Record>
+                </Annotation>
+                <Annotation Term="UI.DataPoint" Qualifier="Carrname">
+                    <Record>
+                        <PropertyValue Property="Value" Path="Carrname"/>
+                        <PropertyValue Property="Title" String="Nombre Compañía"/>
+                        <PropertyValue Property="Description" String="Nombre Compañía"/>
+                    </Record>
+                </Annotation>
+                <Annotation Term="UI.Facets">
+                    <Collection>
+                        <Record Type="UI.ReferenceFacet">
+                            <PropertyValue Property="Label" String="Detalles Aerolinea"/>
+                            <PropertyValue Property="ID" String="detalles"/>
+                            <PropertyValue Property="Target" AnnotationPath="@UI.Identification"/>
+                        </Record>
+                        <Record Type="UI.ReferenceFacet">
+                            <PropertyValue Property="Label" String="Vuelos"/>
+                            <PropertyValue Property="ID" String="Detail"/>
+                            <PropertyValue Property="Target" AnnotationPath="to_vuelos/@UI.LineItem"/>
+                        </Record>
+                    </Collection>
+                </Annotation>
+                <Annotation Term="UI.HeaderInfo">
+                    <Record>
+                        <PropertyValue Property="TypeName" String="Aerolinea"/>
+                        <PropertyValue Property="TypeNamePlural" String="Aerolineas"/>
+                        <PropertyValue Property="TypeImageUrl" String="sap-icon://flight"/>
+                    </Record>
+                </Annotation>
+                <Annotation Term="UI.Identification">
+                    <Collection>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Label" String="Codigo Compañia"/>
+                            <PropertyValue Property="Value" Path="Carrid"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Label" String="Nombre Compañía"/>
+                            <PropertyValue Property="Value" Path="Carrname"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Label" String="Moneda Compañía"/>
+                            <PropertyValue Property="Value" Path="Currcode"/>
+                        </Record>
+                        <Record Type="UI.DataFieldWithUrl">
+                            <PropertyValue Property="Label" String="Pagina web"/>
+                            <PropertyValue Property="Value" Path="Url"/>
+                            <PropertyValue Property="Url" Path="Url"/>
+                        </Record>
+                    </Collection>
+                </Annotation>
+                <Annotation Term="UI.LineItem">
+                    <Collection>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Label" String="Codigo Compañía"/>
+                            <PropertyValue Property="Value" Path="Carrid"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Label" String="Nombre Compañía"/>
+                            <PropertyValue Property="Value" Path="Carrname"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Label" String="Moneda Compañía"/>
+                            <PropertyValue Property="Value" Path="Currcode"/>
+                        </Record>
+                        <Record Type="UI.DataFieldWithUrl">
+                            <PropertyValue Property="Label" String="Pagina web"/>
+                            <PropertyValue Property="Value" Path="Url"/>
+                            <PropertyValue Property="Url" Path="Url"/>
+                        </Record>
+                    </Collection>
+                </Annotation>
+                <Annotation Term="UI.SelectionFields">
+                    <Collection>
+                        <PropertyPath>Carrid</PropertyPath>
+                        <PropertyPath>Carrname</PropertyPath>
+                        <PropertyPath>Currcode</PropertyPath>
+                    </Collection>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="ZCDS_CON_SCARR_RG_CDS.ZCDS_CON_SPFLI_RGType/HasDraftEntity">
+                <Annotation Term="UI.HiddenFilter"/>
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="ZCDS_CON_SCARR_RG_CDS.ZCDS_CON_SPFLI_RGType/DraftUUID">
+                <Annotation Term="UI.HiddenFilter"/>
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="ZCDS_CON_SCARR_RG_CDS.ZCDS_CON_SPFLI_RGType/ParentDraftUUID">
+                <Annotation Term="UI.HiddenFilter"/>
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="ZCDS_CON_SCARR_RG_CDS.ZCDS_CON_SPFLI_RGType/DraftEntityCreationDateTime">
+                <Annotation Term="UI.HiddenFilter"/>
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="ZCDS_CON_SCARR_RG_CDS.ZCDS_CON_SPFLI_RGType/DraftEntityLastChangeDateTime">
+                <Annotation Term="UI.HiddenFilter"/>
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="ZCDS_CON_SCARR_RG_CDS.ZCDS_CON_SPFLI_RGType/HasActiveEntity">
+                <Annotation Term="UI.HiddenFilter"/>
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="ZCDS_CON_SCARR_RG_CDS.ZCDS_CON_SPFLI_RGType/IsActiveEntity">
+                <Annotation Term="UI.HiddenFilter"/>
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="ZCDS_CON_SCARR_RG_CDS.ZCDS_CON_SPFLI_RGType/Preparation_ac">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="ZCDS_CON_SCARR_RG_CDS.ZCDS_CON_SPFLI_RGType/Validation_ac">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="ZCDS_CON_SCARR_RG_CDS.ZCDS_CON_SPFLI_RGType">
+                <Annotation Term="UI.DataPoint" Qualifier="Carrid">
+                    <Record>
+                        <PropertyValue Property="Value" Path="Carrid"/>
+                        <PropertyValue Property="Title" String="Codigo Compañia"/>
+                        <PropertyValue Property="Description" String="Codigo Compañia"/>
+                    </Record>
+                </Annotation>
+                <Annotation Term="UI.DataPoint" Qualifier="Connid">
+                    <Record>
+                        <PropertyValue Property="Value" Path="Connid"/>
+                        <PropertyValue Property="Title" String="Codigo Conexión de vuelo"/>
+                        <PropertyValue Property="Description" String="Codigo Conexión de vuelo"/>
+                    </Record>
+                </Annotation>
+                <Annotation Term="UI.Facets">
+                    <Collection>
+                        <Record Type="UI.ReferenceFacet">
+                            <PropertyValue Property="Label" String="Detalles Vuelo"/>
+                            <PropertyValue Property="ID" String="detalles"/>
+                            <PropertyValue Property="Target" AnnotationPath="@UI.Identification"/>
+                        </Record>
+                    </Collection>
+                </Annotation>
+                <Annotation Term="UI.HeaderInfo">
+                    <Record>
+                        <PropertyValue Property="TypeName" String="Vuelo"/>
+                        <PropertyValue Property="TypeNamePlural" String="Vuelos"/>
+                        <PropertyValue Property="TypeImageUrl" String="sap-icon://timesheet"/>
+                    </Record>
+                </Annotation>
+                <Annotation Term="UI.Identification">
+                    <Collection>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Label" String="Codigo Conexión de vuelo"/>
+                            <PropertyValue Property="Value" Path="Connid"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Label" String="Ciudad de salida"/>
+                            <PropertyValue Property="Value" Path="Cityfrom"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Label" String="Aeropuerto de salida"/>
+                            <PropertyValue Property="Value" Path="Airpfrom"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Label" String="Ciudad de llegada"/>
+                            <PropertyValue Property="Value" Path="Cityto"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Label" String="Aeropuerto de llegada"/>
+                            <PropertyValue Property="Value" Path="Airpto"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Label" String="Estado de Vuelo"/>
+                            <PropertyValue Property="Value" Path="cancel"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Label" String="Hora de salida"/>
+                            <PropertyValue Property="Value" Path="Deptime"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Label" String="Hora de llegada"/>
+                            <PropertyValue Property="Value" Path="Arrtime"/>
+                        </Record>
+                    </Collection>
+                </Annotation>
+                <Annotation Term="UI.LineItem">
+                    <Collection>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Label" String="Codigo Conexión de vuelo"/>
+                            <PropertyValue Property="Value" Path="Connid"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Label" String="Ciudad de salida"/>
+                            <PropertyValue Property="Value" Path="Cityfrom"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Label" String="Aeropuerto de salida"/>
+                            <PropertyValue Property="Value" Path="Airpfrom"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Label" String="Ciudad de llegada"/>
+                            <PropertyValue Property="Value" Path="Cityto"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Label" String="Aeropuerto de llegada"/>
+                            <PropertyValue Property="Value" Path="Airpto"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Label" String="Estado de Vuelo"/>
+                            <PropertyValue Property="Criticality" Path="cancel"/>
+                            <PropertyValue Property="Value" Path="cancel_text"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Label" String="Hora de salida"/>
+                            <PropertyValue Property="Value" Path="Deptime"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Label" String="Hora de llegada"/>
+                            <PropertyValue Property="Value" Path="Arrtime"/>
+                        </Record>
+                    </Collection>
+                </Annotation>
+            </Annotations>
+        </Schema>
+    </edmx:DataServices>
+</edmx:Edmx>

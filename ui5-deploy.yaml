@@ -1,0 +1,31 @@
+# yaml-language-server: $schema=https://sap.github.io/ui5-tooling/schema/ui5.yaml.json
+
+specVersion: "3.1"
+metadata:
+  name: project1
+type: application
+builder:
+  customTasks:
+    - name: ui5-tooling-transpile-task
+      afterTask: replaceVersion
+      configuration:
+        debug: true
+        transformModulesToUI5:
+          overridesToOverride: true
+    - name: deploy-to-abap
+      afterTask: generateCachebusterInfo
+      configuration:
+        target:
+          destination: T4S_FORMACION_FIORI
+          url: http://solt4sapp.t4sadvance.com:51100
+          client: '100'
+        app:
+          name: Z_FORM_FIORI_RG
+          package: ZFORMFIORI
+          transport: S4DK901180
+        exclude:
+          - /test/
+  resources:
+    excludes:
+      - /test/**
+      - /localService/**
